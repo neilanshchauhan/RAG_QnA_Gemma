@@ -19,12 +19,12 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 
 st.title("Gemma Document Q&A")
 
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="Gemma2-9b-it")
 
 prompt = ChatPromptTemplate.from_template(
     """
     Answer the questions based on the provided context only.
-    Please provide the most accurate response based on the question
+    Please provide the most accurate and detailed response based on the question
     <context>
     {context}
     <context>

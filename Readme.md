@@ -25,26 +25,25 @@ The Gemma Document Q&A application allows users to upload PDF documents and inte
    ```bash
    git clone https://github.com/neilanshchauhan/RAG_QnA_Gemma.git
    cd RAG_QnA_Gemma
-```
 
 2. **Set Up a Virtual Environment:** 
 ```
 python -m venv env
 env\Scripts\activate        # for windows
 source env/bin/activate     # for mac
-```   
+   
 3. **Install Dependencies:**
 
     ```
     pip install -r requirements.txt
-    ```
+    
 4. **Configure API Keys:**
 
     ##### Create a .env file in the root directory of your project and add your API keys:
     ```
     GOOGLE_API_KEY = <your_google_api_key>
     GROQ_API_KEY = <your_groq_api_key>
-    ```
+    
 5. **Run the Streamlit App:**
     ##### Start the Streamlit application with:
     ```

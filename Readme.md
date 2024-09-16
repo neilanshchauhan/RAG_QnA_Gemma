@@ -22,48 +22,65 @@ The Gemma Document Q&A application allows users to upload PDF documents and inte
 
 1. **Clone the Repository:**
 
-   ```bash
-   git clone https://github.com/neilanshchauhan/RAG_QnA_Gemma.git
-   cd RAG_QnA_Gemma
+    ```bash
+    git clone https://github.com/neilanshchauhan/RAG_QnA_Gemma.git
+    cd RAG_QnA_Gemma
+    ```
 
-2. **Set Up a Virtual Environment:** 
-```
-python -m venv env
-env\Scripts\activate        # for windows
-source env/bin/activate     # for mac
-   
+2. **Set Up a Virtual Environment:**
+
+    For Windows:
+
+    ```bash
+    python -m venv env
+    env\Scripts\activate
+    ```
+
+    For macOS/Linux:
+
+    ```bash
+    python -m venv env
+    source env/bin/activate
+    ```
+
 3. **Install Dependencies:**
 
-    ```
+    ```bash
     pip install -r requirements.txt
-    
+    ```
+
 4. **Configure API Keys:**
 
-    ##### Create a .env file in the root directory of your project and add your API keys:
+    Create a `.env` file in the root directory of your project and add your API keys:
+
+    ```plaintext
+    GOOGLE_API_KEY=<your_google_api_key>
+    GROQ_API_KEY=<your_groq_api_key>
     ```
-    GOOGLE_API_KEY = <your_google_api_key>
-    GROQ_API_KEY = <your_groq_api_key>
-    
+
 5. **Run the Streamlit App:**
-    ##### Start the Streamlit application with:
-    ```
+
+    Start the Streamlit application with:
+
+    ```bash
     streamlit run app.py
-
     ```
 
-    **i). Upload a PDF:**
+### Usage
 
-    Navigate to the application in your web browser.
-    Use the file uploader to upload a PDF document.
-    ##### **ii). Generate Embeddings:**
+1. **Upload a PDF:**
+
+    Navigate to the application in your web browser and use the file uploader to upload a PDF document.
+
+2. **Generate Embeddings:**
 
     Click on "Generate Embeddings" to process the uploaded document and create vector embeddings.
-    ##### **iii).Ask Questions:**
 
-    Enter your questions in the provided input field.
-    The application will use the Groq model to provide answers based on the document content.
-    ##### **iv).View Document Similarity Search:**
+3. **Ask Questions:**
 
-    The sidebar will display similar document content based on the query for additional context.
+    Enter your questions in the provided input field. The application will use the Groq model to provide answers based on the document content.
 
+4. **View Document Similarity Search:**
+
+    The sidebar will display similar document content based on the query to provide additional context.
 

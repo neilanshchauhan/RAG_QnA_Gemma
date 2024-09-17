@@ -19,7 +19,7 @@ The Gemma Document Q&A application allows users to upload PDF documents and inte
 
 ### Prerequisites
 
-- Python 3.11 or higher
+- Python 3.9 or higher
 - A virtual environment (recommended)
 
 ### Installation
